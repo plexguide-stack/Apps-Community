@@ -55,10 +55,10 @@
              PUID: '1000'
              PGID: '1000'
              TRAEFIK_VERSION: '1'
-             CF_TOKEN: '970067eba01b3cdd062c89f1d716d0fee5b81'
-             CF_EMAIL: 'ackerzjosh@netpl3x.com'
-             TARGET_DOMAIN: 'netpl3x.com'
-             DOMAIN1: 'netpl3x.com'
+             CF_TOKEN: '{{CF_API_KEY}}'
+             CF_EMAIL: '{{CF_API_EMAIL}}'
+             TARGET_DOMAIN: '{{domain.stdout}}{{tldset}}'
+             DOMAIN1: '{{domain.stdout}}{{tldset}}'
              DOMAIN1_ZONE_ID: '11454fc3b2872fa8b3f8ef67a04d83ba'
 
     # MAIN SCRIPT ##############################################################
