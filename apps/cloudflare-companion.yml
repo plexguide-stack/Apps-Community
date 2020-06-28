@@ -16,7 +16,7 @@
         pgrole: 'Cloudflare-Companion'
         intport: '9111'
         extport: '9111'
-        image: 'tiredofit/nginx-proxy-cloudflare-companion:latest'
+        image: 'tiredofit/traefik-cloudflare-companion:latest'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
