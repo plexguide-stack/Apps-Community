@@ -13,10 +13,10 @@
 
     - name: 'Set Known Facts'
       set_fact:
-        pgrole: 'sonarrAnimeSub'
-        intport: '8989'
-        extport: '9292'
-        image: 'lsiodev/sonarr-preview'
+        pgrole: 'Cloudflare-Companion'
+        intport: '9111'
+        extport: '9111'
+        image: 'tiredofit/traefik-cloudflare-companion:latest'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
