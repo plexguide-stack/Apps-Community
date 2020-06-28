@@ -50,16 +50,16 @@
           - /var/run/docker.sock:/var/run/docker.sock:ro
 
     - name: 'Setting PG ENV'
-      set_fact:
-        pg_env:
-          PUID: '1000'
-          PGID: '1000'
-      - TRAEFIK_VERSION=1
-      - CF_EMAIL=ackerzjosh@netpl3x.com
-      - CF_TOKEN=rhdcXm1UemsG8FLsTeEfLo7OcCtQfubarUw7_BqM
-      - TARGET_DOMAIN=netpl3x.com
-      - DOMAIN1=netpl3x.com
-      - DOMAIN1_ZONE_ID=11454fc3b2872fa8b3f8ef67a04d83ba
+                 set_fact:
+                   pg_env:
+                     PUID: '1000'
+                     PGID: '1000'
+          TRAEFIK_VERSION:  '1'
+                 CF_EMAIL: 'ackerzjosh@netpl3x.com'
+                 CF_TOKEN: 'rhdcXm1UemsG8FLsTeEfLo7OcCtQfubarUw7_BqM'
+            TARGET_DOMAIN: 'netpl3x.com'
+                  DOMAIN1: 'netpl3x.com'
+          DOMAIN1_ZONE_ID: '11454fc3b2872fa8b3f8ef67a04d83ba'
 
     # MAIN SCRIPT ##############################################################
 
