@@ -14,7 +14,7 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'sonarr2'
-        intport: '7878'
+        intport: '8989'
         extport: '8150'
         image: 'linuxserver/sonarr:preview'
 
