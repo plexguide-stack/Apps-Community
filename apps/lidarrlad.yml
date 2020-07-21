@@ -13,8 +13,8 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'autolidarr'
-        intport: '8687'
-        extport: '8687'
+        intport: '9000'
+        extport: '9000'
         image: 'RandomNinjaAtk/lidarr-lad'
 
     # CORE (MANDATORY) ############################################################
