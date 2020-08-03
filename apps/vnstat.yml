@@ -42,7 +42,7 @@
     - name: 'Setting PG Volumes'
       set_fact:
         pg_volumes:
-          - /:/SERVER
+          - ./data:/var/lib/vnstat
           - /opt/appdata/{{pgrole}}:/root/
 
     - name: 'Setting PG ENV'
