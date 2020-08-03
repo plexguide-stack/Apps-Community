@@ -13,8 +13,8 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'bazarr'
-        intport: '6768'
-        extport: '6768'
+        intport: '6769'
+        extport: '6769'
         image: 'willfarrell/autoheal:latest'
 
     # CORE (MANDATORY) ############################################################
