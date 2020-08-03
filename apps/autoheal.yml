@@ -14,7 +14,7 @@
       set_fact:
         pgrole: 'autoheal'
         intport: '1100'
-        extport: '1000'
+        extport: '1100'
         image: 'willfarrell/autoheal'
 
     # CORE (MANDATORY) ############################################################
