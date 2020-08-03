@@ -12,7 +12,7 @@
     # FACTS #######################################################################
     - name: 'Set Known Facts'
       set_fact:
-        pgrole: 'bazarr'
+        pgrole: 'autoheal'
         intport: '6769'
         extport: '6769'
         image: 'willfarrell/autoheal:latest'
