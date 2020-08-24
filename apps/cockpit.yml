@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+# Title:      PGBlitz (Reference Title File)
+# Author(s):  Admin9705
+# URL:        https://pgblitz.com - http://github.pgblitz.com
+# GNU:        General Public License v3.0
+################################################################################
+version: "2"
+services:
+  mongo:
+    image: mongo
+
+  master:
+    image: aheinze/cockpit
+    environment:
+      COCKPIT_SESSION_NAME: "cockpit"
+      COCKPIT_SALT: "y283y2983y48239y"
+      COCKPIT_DATABASE_SERVER: "mongodb://mongo:27017"
+      COCKPIT_DATABASE_NAME: "cockpit_master"
+    depends_on:
+      - mongo
+    ports:
+      - 8080:80
+
+  next:
+    image: aheinze/cockpit:next
+    environment:
+      COCKPIT_SESSION_NAME: "cockpit"
+      COCKPIT_SALT: "y283y2983y48239y"
+      COCKPIT_DATABASE_SERVER: "mongodb://mongo:27017"
+      COCKPIT_DATABASE_NAME: "cockpit_next"
+    depends_on:
+      - mongo
+    ports:
+      - 8081:80
