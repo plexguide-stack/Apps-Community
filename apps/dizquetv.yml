@@ -71,9 +71,12 @@
           - name: plexguide
             aliases:
               - '{{pgrole}}'
-       add_host:
-         hostname: '172.18.0.31.0598c56dc3f6403ab0d4fed6d01e303a.plex.direct:172.17.0.8' 
         security_opts:
           - apparmor:unconfined
         state: started
         labels: '{{pg_labels}}'
+
+# LABELS ######################################################################
+    - name: 'Add a host'
+      add_host:
+        name: '172.18.0.31.0598c56dc3f6403ab0d4fed6d01e303a.plex.direct:172.17.0.8'
