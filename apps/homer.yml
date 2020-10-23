@@ -14,8 +14,8 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'homer'
-        intport: '8902'
-        extport: '8902'
+        intport: '8080'
+        extport: '8080'
         image: 'b4bz/homer:latest'
 
     # CORE (MANDATORY) ############################################################
