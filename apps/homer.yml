@@ -15,7 +15,7 @@
       set_fact:
         pgrole: 'homer'
         intport: '8080'
-        extport: '8080'
+        extport: '8960'
         image: 'b4bz/homer:latest'
 
     # CORE (MANDATORY) ############################################################
