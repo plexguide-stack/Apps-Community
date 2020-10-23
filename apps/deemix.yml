@@ -14,8 +14,8 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'deemix'
-        intport: '8080'
-        extport: '9666'
+        intport: '9666'
+        extport: '8080'
         image: 'registry.gitlab.com/bockiii/deemix-docker:latest'
 
     # CORE (MANDATORY) ############################################################
