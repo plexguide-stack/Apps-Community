@@ -69,7 +69,7 @@
       block:
         - name: 'Deploying {{pgrole}}'
           docker_container:
-            name: 'beets'
+            name: 'mstream'
             image: '{{image}}'
             pull: yes
             published_ports:
